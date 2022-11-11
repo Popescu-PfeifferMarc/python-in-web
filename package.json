@@ -9,7 +9,7 @@
 		"preview": "vite preview",
 		"format": "prettier --config package.json --write index.html src/",
 		"setup": "npm-run-all setup:temp-folder setup:download-pyodide:full setup:extract setup:clean",
-		"setup:temp-folder": "mkdir .temp/",
+		"setup:temp-folder": "mkdir .temp",
 		"setup:download-pyodide:full": "curl -L https://github.com/pyodide/pyodide/releases/download/0.22.0a3/pyodide-0.22.0a3.tar.bz2 > .temp/pyodide.tar.bz2",
 		"setup:download-pyodide:core": "curl -L https://github.com/pyodide/pyodide/releases/download/0.22.0a3/pyodide-core-0.22.0a3.tar.bz2 > .temp/pyodide.tar.bz2",
 		"setup:extract": "tar -xf .temp/pyodide.tar.bz2 -C public/",
