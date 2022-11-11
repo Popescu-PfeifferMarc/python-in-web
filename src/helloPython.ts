@@ -26,9 +26,11 @@ df = pd.DataFrame({
 		"Allen, Mr. William Henry",
 		"Bonnell, Miss. Elizabeth",
 	],
-	"Age": [22, 35, 58],
+	"Age": [22, 35, 10],
 	"Sex": ["male", "male", "female"],
 })
+
+df.sort_values(by=['Age'], inplace=True)
 
 print(df)
 `;
